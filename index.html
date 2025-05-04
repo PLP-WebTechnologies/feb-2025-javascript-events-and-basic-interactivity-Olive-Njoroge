@@ -55,12 +55,21 @@
     <form>
         <label for="name">Name:</label><br>
         <input type="text" name="name" id="name" placeholder="Enter your name..."><br>
+        <p id="nameFeedback" style="color: red;"></p>
+
         <label for="email">Email:</label><br>
         <input type="email" name="email" id="email" placeholder="Enter your email..." required><br>
+        <p id="emailFeedback" style="color: red;"></p>
+
         <label for="password">Password:</label><br>
         <input type="password" name="password" id="password" required><br>
+        <p id="passwordFeedback" style="color: red;"></p>
+
         <label for="view">Thoughts:</label><br>
-        <textarea name="view" id="view" placeholder="Please feel free to share your thoughts."></textarea>
+        <textarea name="view" id="view" placeholder="Please feel free to share your thoughts."></textarea><br>
+        <p id="thoughtsFeedback"></p>
+
+        <input type="submit" value="Submit" id="Submit">
     </form>
 
     <script src="index.js"></script>
