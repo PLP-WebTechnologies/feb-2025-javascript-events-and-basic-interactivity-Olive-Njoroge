@@ -5,54 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="dark">
     <nav>
         <a href="#">Homepage</a>
         <a href="#">Coffee</a>
-        <a href="#">Order </a>
+        <a href="#">Order</a>
     </nav>
     <header>
-        <button class="mode" >Dark🌙</button>
+        <button class="mode">Dark🌙</button>
         <h1>Welcome to our coffee shop☕☕</h1>
         <p>We have a variety of options which will leave you craving for more <button class="remove">remove me</button></p>
     </header>
 
-    <section >
-        <figure class="coffeeImages">
-            <figure>
-                <img src="/images/images/americanoCoffee.png" alt="Americano Coffee">
-                <figcaption>Americano Coffee</figcaption>
+    <section>
+        <div class="slideshow-container">
+            <figure class="coffeeImages">
+                <figure>
+                    <img src="/images/images/americanoCoffee.png" alt="Americano Coffee" loading="lazy">
+                    <figcaption>Americano Coffee</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/images/cappuccino.png" alt="Cappuccino Coffee" loading="lazy">
+                    <figcaption>Cappuccino Coffee</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/images/Espresso.png" alt="Espresso Coffee" loading="lazy">
+                    <figcaption>Espresso Coffee</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/images/flatWhite.png" alt="Flat White Coffee" loading="lazy">
+                    <figcaption>Flat White Coffee</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/images/Latte.png" alt="Latte Coffee" loading="lazy">
+                    <figcaption>Latte Coffee</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/images/Mocha.png" alt="Mocha Coffee" loading="lazy">
+                    <figcaption>Mocha Coffee</figcaption>
+                </figure>
             </figure>
-            <figure>
-                <img src="/images/images/cappuccino.png" alt="Cappuccino Coffee">
-                <figcaption>Cappuccino Coffee</figcaption>
-            </figure>
-            <figure>
-                <img src="/images/images/Espresso.png" alt="Espresso Coffee">
-                <figcaption>Espresso Coffee</figcaption>
-            </figure>
-            <figure>
-                <img src="/images/images/flatWhite.png" alt="Flat White Coffee">
-                <figcaption>Americano Coffee</figcaption>
-            </figure>
-            <figure>
-                <img src="/images/images/Latte.png" alt="Latte Coffee">
-                <figcaption>Latte Coffee</figcaption>
-            </figure>
-            <figure>
-                <img src="/images/images/Mocha.png" alt="Mocha Coffee">
-                <figcaption>Mocha Coffee</figcaption>
-            </figure>
-        </figure>
+        </div>
         <hr>
-        
     </section>
 
-    <!--Input form-->
     <h2>Hello, We'd like to hear your feedback on ways we could improve our services</h2>
-    <form>
+    <form id="feedbackForm">
         <label for="name">Name:</label><br>
         <input type="text" name="name" id="name" placeholder="Enter your name..."><br>
         <p id="nameFeedback" style="color: red;"></p>
@@ -73,7 +72,5 @@
     </form>
 
     <script src="index.js"></script>
-
-    
 </body>
 </html>
